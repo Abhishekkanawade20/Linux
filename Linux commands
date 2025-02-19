@@ -1,1 +1,77 @@
+#pwd - shows present working dir
+
+#ls  - list
+
+#ls -ltr
+	l = long listing
+	t = time stamp
+	r = reverse order
+	
+#mkdir - to create a directory
+
+#touch - to create file
+
+#rm -r <file name>	- to delete file
+
+#rmdir	- to delete directory
+
+#free -h & free -g	- shows the system memory usage
+	h = human readable
+	g = show memory in GB
+	
+#nproc 	- shows the cpu count
+
+#df -h	- shows disk size, also shows disk space available size
+
+#top 	- use to monitor, show cpu, memory usage, it also shows process
+
+#ssh -i <private_key> ubuntu@public_ip	-> To take remote of instance
+
+#./<executable file name> 	--> to run file 
+
+# cut -b 1-5 <file_name>    ---> It will cut the 1-5 byte/alphabet portion and will give it to you
+
+# diff <file_1> <file_2>    --> It will give the diff between two files
+
+# tee --> it will copy output and put in file . e.g echo "hello" | tee abhi.txt
+
+#du -sh --> to check the disk usage by folder/directory, #du * --> show the each file disk usage
+
+#which --> gives the path 
+
+#sudo -i --> switch to root user
+
+########################################################################################
+Aws cli installation on ubuntu:
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" 	--> download zip file
+unzip awscliv2.zip 	--> unzip that file
+sudo ./aws/install	--> execute that file
+
+#################################################################################################################
+
+#export username="Abhishekkanawade20"
+#export token=
+
+
+#####################################
+User related file:
+1. /etc/passwd ----> Shows user list
+2. /etc/shadow ----> user password related
+3. /etc/gshadow
+4. /etc/group
+
+##################################################
+Process:
+- PID stands for process id
+- 1 process id means boot loader starts that process first
+
+Que: what are the process types?
+Ans: Running, sleeping, killed, terminated, zombie process
+
+tail -f <file_name>  --> It will show new added logs from the down 
+
+
+
+
 
