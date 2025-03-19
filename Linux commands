@@ -71,6 +71,7 @@ Ans: Running, sleeping, killed, terminated, zombie process
 
 tail -f <file_name>  --> It will show new added logs from the down 
 
+#ps -ef | grep jenkins   --> to see the process information
 
 
 
