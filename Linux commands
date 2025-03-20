@@ -41,6 +41,10 @@
 
 #sudo -i --> switch to root user
 
+#rsync - command used to sync the changes, suppose we have one folder and we want to sync those changes if any file added in that folder then we can use it.
+         Also it used to take backup from server to local.
+	 syntax: #rsync <source> <dest>
+
 ########################################################################################
 Aws cli installation on ubuntu:
 
