@@ -45,6 +45,21 @@
          Also it used to take backup from server to local.
 	 syntax: #rsync <source> <dest>
 
+==========================================================================================================================================================
+linux environment variables.
+#env --> to see the environment variables.
+#MY_VAR=hello   ---> To set the local variables/temporary variables.
+
+To set environment permenent:
+- go to the path #/home/ubuntu/.profile  file. 
+- set the value --> export MY_VAR=hello
+- #source .profile --> To update the changes
+
+To set env variables to all the user:
+- Edit /etc/profile
+- set variables: 
+	- export MYVAR=VALUE
+	- source /etc/profile
 ########################################################################################
 Aws cli installation on ubuntu:
 
