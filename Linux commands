@@ -55,7 +55,7 @@ To set environment permenent:
 - set the value --> export MY_VAR=hello
 - #source .profile --> To update the changes
 
-To set env variables to all the user:
+To set env variables permenent for users:
 - Edit /etc/profile
 - set variables: 
 	- export MYVAR=VALUE
