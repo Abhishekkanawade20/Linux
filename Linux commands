@@ -102,6 +102,22 @@ sudo apt remove nginx   # Remove a package
 sudo apt autoremove     # Remove unused dependencies
 sudo apt search nginx   # Search for a package
 
+####################################################################################
+
+#scp -i random.pem "New Text Document.txt" ubuntu@65.2.40.207:/home/ubuntu
+
+     scp: secure copy protocol command used to copy file from local to server
+	 key: give the key path
+	 next to key give file name which you have to copy
+	 ubuntu@65.2.40.207:/home/ubuntu (sever name and ip address:path of server where you have to paste )
+	 
+    Copy file from server to local:
+	#scp -i random.pem -r ubuntu@65.2.40.207:/home/ubuntu/lenovo .
+	
+	-r - stands for recursive since we are copying folder.
+	Then path of server.
+	. stands for destination, it denotes current location
+
 
 
 
