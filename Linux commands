@@ -85,12 +85,22 @@ Process:
 - PID stands for process id
 - 1 process id means boot loader starts that process first
 
-Que: what are the process types?
-Ans: Running, sleeping, killed, terminated, zombie process
-
 tail -f <file_name>  --> It will show new added logs from the down 
+kill <PID of process> --> to kill the process
 
 #ps -ef | grep jenkins   --> to see the process information
+#ps aux | nl            --> It shows the number of processes that are running
+#ps aux | grep <process_name>   - to find the process
+#kill -9 <PID>                  - to kill the process forcefully
+#kill <PID>                     - kills the normal process
+what is used of pipe --> pipe takes the output of first command and sents it to second command.
+
+Q.what is the difference between #ps aux and #ps -ef
+Ans: ps aux - show cpu and memory usage
+     ps -ef - does not show cpu and memory usage
+
+Que: what are the process types?
+Ans: Running, sleeping, killed, terminated, zombie process
 
 #############################################################################################
 Package Management:
