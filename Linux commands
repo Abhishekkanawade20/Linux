@@ -85,23 +85,49 @@ Process:
 - PID stands for process id
 - 1 process id means boot loader starts that process first
 
-tail -f <file_name>  --> It will show new added logs from the down 
-kill <PID of process> --> to kill the process
+# tail -f <file_name>  --> It will show new added logs from the down 
+# kill <PID> --> to kill the process
 
-#ps -ef | grep jenkins   --> to see the process information
-#ps aux | nl            --> It shows the number of processes that are running
-#ps aux | grep <process_name>   - to find the process
-#kill -9 <PID>                  - to kill the process forcefully
-#kill <PID>                     - kills the normal process
+# ps -ef | grep jenkins   --> to see the process information
+# ps aux | nl            --> It shows the number of processes that are running
+# ps aux | grep <process_name>   - to find the process
+# kill -9 <PID>                  - to kill the process forcefully
+# kill <PID>                     - kills the normal process
+# kill -STOP <PID>               - to stop the process
+# kill -CONT <PID>		 - To resume the process
+# renice -n 10 -p <PID>		 - To prorities the process
+  [-19 to 20] --> -19 means higher priority and 20 means lower priority
+
 what is used of pipe --> pipe takes the output of first command and sents it to second command.
 
 Q.what is the difference between #ps aux and #ps -ef
-Ans: ps aux - show cpu and memory usage
-     ps -ef - does not show cpu and memory usage
+Ans: # ps aux - show cpu and memory usage
+     # ps -ef - does not show cpu and memory usage
 
 Que: what are the process types?
 Ans: Running, sleeping, killed, terminated, zombie process
 
+Que: What is the diff between process and service?
+Ans: Services are special kind of processes, services are started at the time of server boot and also it starts whenver the server restarts.
+     Processes
+
+#################################################################################################
+
+Service Management:
+
+# systemctl list-units --type=service    - To check the runnug services
+# systemctl stop <service_name>		 - To stop the service
+# systemctl start <service_name>         - To start the service
+
+############################################################################################
+
+Monitoring:
+
+# top        - It shows real time data
+# htop       - shows info in better inetrface
+# vmstat     - It reports the system performance, free memory check, check cache
+# free -m    - show free memory and used memory
+#  
 #############################################################################################
 Package Management:
 
