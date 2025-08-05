@@ -73,14 +73,30 @@ sudo ./aws/install	--> execute that file
 #export token=
 
 
-#####################################
-User related file:
+##############################################################################################################################################
+User Management:
 1. /etc/passwd ----> Shows user list
 2. /etc/shadow ----> user password related
 3. /etc/gshadow
 4. /etc/group
 
-##################################################
+# useradd abhishek   --> To add user
+# passwd abhishek    --> To set pass for user
+# userdel abhishek   --> To delete the user
+# adduser abhishek   --> It also creates with user along with user it creates home directory for user, and gives prompts to create the passowrd
+                         Also it gives prompt to add userfull name
+
+
+
+Que 1: If you have the access of linux server, can you decrypt the password of linux user ?
+Ans: No, decryption is not possible. If somebody forgots the password there is not way to restore the password.
+
+Que 2: What is difference between useradd and adduser command?
+Ans : useradd only creates, not creates other fields
+      adduser creates user as well as creates the home directory and gives prompts to create the password and add full name
+
+
+###############################################################################################################################################
 Process:
 - PID stands for process id
 - 1 process id means boot loader starts that process first
