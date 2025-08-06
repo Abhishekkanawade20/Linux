@@ -85,6 +85,11 @@ User Management:
 # userdel abhishek   --> To delete the user
 # adduser abhishek   --> It also creates with user along with user it creates home directory for user, and gives prompts to create the passowrd
                          Also it gives prompt to add userfull name
+# chage -M 90 username --> to set the password expiry days
+# passwd -l username   --> Lock user account
+# passwd -u username   --> To unlock user account
+# usermod -aG groupname username  --> To add user in group
+
 
 
 
@@ -169,6 +174,21 @@ sudo apt search nginx   # Search for a package
 	-r - stands for recursive since we are copying folder.
 	Then path of server.
 	. stands for destination, it denotes current location
+
+###############################################################################################################################
+SSH-Client:
+To take the access of server you need to take it with help of ssh-client, so basically on server sshd server running in the background (daemon)
+SSH-Client connect with this service.
+
+In corporate world - if you want to connect with server, then on server team lead creates the user and creates the password.
+
+How you will take the acccess of machine?
+1. Create a user on linux
+2. Install ssh-client on windows like gitbash.
+3. Open Gitbash and run below command
+   # ssh username@public_ip_address
+   # enter password:
+
 
 
 
