@@ -177,10 +177,16 @@ sudo apt search nginx   # Search for a package
 
 ###############################################################################################################################
 SSH-Client:
+(Steps to take access of server without public-key)
 To take the access of server you need to take it with help of ssh-client, so basically on server sshd server running in the background (daemon)
 SSH-Client connect with this service.
 
 In corporate world - if you want to connect with server, then on server team lead creates the user and creates the password.
+
+prerequisites:
+1. Go to #vim /etc/ssh/sshd_config.d/60-cloudimg-settings.conf
+2. Set passwordauthentication - Yes
+3. Restart the ssh service - #sudo systemctl restart ssh
 
 How you will take the acccess of machine?
 1. Create a user on linux
