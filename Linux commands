@@ -1,3 +1,10 @@
+System commands:
+
+# uname -arv  --> Shows kernal name, and architecture details.
+# dmidecode   --> Shwoing memory, system, bios detailed information
+
+
+
 #pwd - shows present working dir
 
 #ls  - list
