@@ -207,6 +207,12 @@ How you will take the acccess of machine?
    # ssh username@public_ip_address
    # enter password:
 
+###################################################################################
+Networking commands:
+# ufw -status  
+# ufw allow 80/tcp   --> to allow the port
+# ufw enable         --> To enable the port
+# ufw -v status 
 
 
 
