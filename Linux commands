@@ -209,11 +209,16 @@ How you will take the acccess of machine?
 
 ###################################################################################
 Networking commands:
-# ufw -status  
+# systemctl status ufw  --> to check the status of firewall  
 # ufw allow 80/tcp   --> to allow the port
 # ufw enable         --> To enable the port
 # ufw -v status 
 
-
+Problem: I am not able to access internet on ubuntu instance which was installed on ubuntu instance.
+Troubleshooting steps performed:
+1. ping the google - ping 8.8.8.8 
+2. systemctl status ufw --> Check the firewall status
+3. If not enable, enable it --> # sudo ufw enable
+4. Now ping the google
 
 
