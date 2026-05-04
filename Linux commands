@@ -2,6 +2,11 @@ System commands:
 
 # uname -arv  --> Shows kernal name, and architecture details.
 # dmidecode   --> Shwoing memory, system, bios detailed information
+# whoami - user name
+# who - show current user logged in list/gived detailed
+# ps - to see running processes
+# ps -ef --> shows all processes
+# top  -> complete process detailed of os : how many users loggesd, CPU and memory utilization 
 
 
 
@@ -242,5 +247,24 @@ Hard Link
 5. Both original file and hard link share the same data on disk.
 6. If you delete the original file, the hard link still works (data is not lost)
 7. Cannot be created for directories (normally) or across different file systems.
+
+#######################################################################################################################
+grep - to find the specific pattern in file used grep command
+1. grep "error" logfile.txt   - to find the error in log file
+2. grep -i "error" logfile.txt - Case-insensitive search
+3. ps -ef | grep apache - used to check the status of apache service 
+
+#######################################################################################################################
+
+Find command:
+
+1. to find files in lunux machine
+2. find / -name abhishek
+
+
+locate - It give the location 
+
+
+
 
 
