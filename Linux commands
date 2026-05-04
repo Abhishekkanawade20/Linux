@@ -237,5 +237,10 @@ Ans: Soft link - soft link is shortcut of original file
 Hard Link
 1. deleting, renaming or removing original file will not effect the hard link
 2. ln <file_name> <hard_link_filename>
+3. The inode number same 
+4. when we make chamges in original file same changes reflects in hardlink file 
+5. Both original file and hard link share the same data on disk.
+6. If you delete the original file, the hard link still works (data is not lost)
+7. Cannot be created for directories (normally) or across different file systems.
 
 
