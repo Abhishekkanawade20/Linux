@@ -221,4 +221,21 @@ Troubleshooting steps performed:
 3. If not enable, enable it --> # sudo ufw enable
 4. Now ping the google
 
+#########################################################################################################
+
+Que: What is the difference between hard link and soft link ?
+Ans: Soft link - soft link is shortcut of original file
+1. ln -s <file_path> <soft_link_name>
+2. Suppose file path too long to make simple to access we creates soft link 
+3. when we deletes orginal file soft link also damages
+4. When we deltes soft link then it will not effect on original file
+4. inode for soft link is differenet 
+5. We can change in shortcut soft link file and original file will delete
+6. to delete softlink - user rm command 
+7. Can link directories and can work across different file systems.
+
+Hard Link
+1. deleting, renaming or removing original file will not effect the hard link
+2. ln <file_name> <hard_link_filename>
+
 
