@@ -7,6 +7,9 @@ System commands:
 # ps - to see running processes
 # ps -ef --> shows all processes
 # top  -> complete process detailed of os : how many users loggesd, CPU and memory utilization 
+# awk -> it is a text processing command used to filter file 
+ 	awk '{print $1}' <file_name> -> it will print first column
+# awk '/error/ {print $0}' error.txt  -> it will give output of error word and print entire line 
 
 
 
