@@ -267,6 +267,17 @@ Find command:
 
 locate - It give the location 
 
+######################################################################################################################
+
+Que: Command to to print 5th largest file in directory?
+Ans: # ls -1S | awk 'NR==6 {print $9}' 
+	- It will list all files in descending order 
+	- awk - text processing command
+	- NR = it is the pointer 
+	- $9 - prints the 9th column that is file name 
+
+
+
 
 
 
