@@ -10,6 +10,7 @@ System commands:
 # awk -> it is a text processing command used to filter file 
  	awk '{print $1}' <file_name> -> it will print first column
 # awk '/error/ {print $0}' error.txt  -> it will give output of error word and print entire line 
+# nl filename --> view file by line number 
 
 
 
@@ -278,6 +279,14 @@ Ans: # ls -1S | awk 'NR==6 {print $9}'
 	- $9 - prints the 9th column that is file name 
 
 ######################################################################################################################
+
+Que: What is the difference between less and more command ?
+Ans: more - scroll page by page, only forward navigation 
+	 less - move forward and backward, better navigation 
+
+##############################################################################################
+
+
 
 Que: Command to print only username ?
 Ans: cat /etc/passwd | awk -F: '{print $1}'
