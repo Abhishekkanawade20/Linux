@@ -256,6 +256,7 @@ grep - to find the specific pattern in file used grep command
 1. grep "error" logfile.txt   - to find the error in log file
 2. grep -i "error" logfile.txt - Case-insensitive search
 3. ps -ef | grep apache - used to check the status of apache service 
+4. grep -rl "error" --include='*.txt' /home   --> to find error keyword in all text file 
 
 #######################################################################################################################
 
