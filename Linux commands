@@ -276,6 +276,13 @@ Ans: # ls -1S | awk 'NR==6 {print $9}'
 	- NR = it is the pointer 
 	- $9 - prints the 9th column that is file name 
 
+######################################################################################################################
+
+Que: Command to print only username ?
+Ans: cat /etc/passwd | awk -F: '{print $1}'
+	- -F: → sets delimiter as colon :
+	- {print $1} → prints first field (username)
+
 
 
 
