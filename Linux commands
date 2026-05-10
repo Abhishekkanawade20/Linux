@@ -222,6 +222,7 @@ Networking commands:
 # ufw allow 80/tcp   --> to allow the port
 # ufw enable         --> To enable the port
 # ufw -v status 
+# ip a  	--> to see the ip address of your linux server
 
 Problem: I am not able to access internet on ubuntu instance which was installed on ubuntu instance.
 Troubleshooting steps performed:
@@ -287,11 +288,12 @@ Ans: more - scroll page by page, only forward navigation
 ##############################################################################################
 
 
-
 Que: Command to print only username ?
 Ans: cat /etc/passwd | awk -F: '{print $1}'
 	- -F: → sets delimiter as colon :
 	- {print $1} → prints first field (username)
+
+################################################################################
 
 
 
