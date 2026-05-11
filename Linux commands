@@ -12,6 +12,10 @@ System commands:
 # awk '/error/ {print $0}' error.txt  -> it will give output of error word and print entire line 
 # nl filename --> view file by line number 
 
+# df -h    --> to check disk full space 
+# du -sh   --> to check disk usage space by file 
+# free -h  --> to check free and used memory 
+
 
 
 
