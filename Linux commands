@@ -16,6 +16,14 @@ System commands:
 # ifconfig    --> to check ip address 
 # scp         --> used to copy file from one server to other (scp <file_name> username@ip:/home/ubuntu)
 # rsync       --> start copying from it left, its sync the file 
+# sed 's/<word_to_replace>/<replaceble word>/g' <file_name>  --> to replace word in file 
+# sort   --> to sort data 
+# unique <file_name>  --> to remove duplicate line or data from file 
+# cut --> if you need specific colums from file 
+	command: cut -d: f1 /etc/passwd
+			 -d - deliminator:
+			 f1 - first column
+			 /etc/passwd - file name 
 
 # df -h    --> to check disk full space 
 # du -sh   --> to check disk usage space by file 
@@ -232,6 +240,7 @@ Networking commands:
 # ufw enable         --> To enable the port
 # ufw -v status 
 # ip a  	--> to see the ip address of your linux server
+# netstat   --> to check the network statistics
 
 Problem: I am not able to access internet on ubuntu instance which was installed on ubuntu instance.
 Troubleshooting steps performed:
@@ -286,9 +295,16 @@ Disk related command:
 
 # fdisk -l  --> to list the disk 
 # lsblk -l  --> to see the 
+# mount /dev/sdb1 <directory_name>  --> to mount partition on particular directory 
+# umount   --> to unmount 
+# blkid   --> to check file system
+# df -hT  --> to check file system mounted or not
+# mkfs.ext4 /dev/sdc1   --> to assign file system
 
-physical partition
-physical 
+create physical volume
+volume group
+create logical volume
+
 
 ######################################################################################################################
 
@@ -312,6 +328,16 @@ Que: Command to print only username ?
 Ans: cat /etc/passwd | awk -F: '{print $1}'
 	- -F: → sets delimiter as colon :
 	- {print $1} → prints first field (username)
+
+OR
+
+cut --> if you need specific colums from file 
+	command: cut -d: f1 /etc/passwd
+			 -d - deliminator:
+			 f1 - first column
+			 /etc/passwd - file name 
+
+cat /etc/passwd | awk -F: '{print $1}' | wc -l   --> to get the word count or to get number of user count
 
 ################################################################################
 
