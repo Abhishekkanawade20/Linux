@@ -25,9 +25,18 @@ System commands:
 			 f1 - first column
 			 /etc/passwd - file name 
 
+# tee  --> to get data of any command in file 
+	command: cat /etc/passwd | tee <file_name>
+
+# alias  --> to create shortcut of any command
+	command: alias f1="cat /etc/passwd" 
+	next time just run f1 
+#lsof  --> to list open files 
+
 # df -h    --> to check disk full space 
 # du -sh   --> to check disk usage space by file 
 # free -h  --> to check free and used memory 
+
 
 
 
@@ -241,6 +250,7 @@ Networking commands:
 # ufw -v status 
 # ip a  	--> to see the ip address of your linux server
 # netstat   --> to check the network statistics
+# nslookup ip  --> to check it is resolving or not ip to dns and dns to ip
 
 Problem: I am not able to access internet on ubuntu instance which was installed on ubuntu instance.
 Troubleshooting steps performed:
