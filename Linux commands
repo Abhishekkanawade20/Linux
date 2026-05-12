@@ -279,6 +279,17 @@ Find command:
 
 locate - It give the location 
 
+#######################################################################################################################
+
+LVM: 
+Disk related command:
+
+# fdisk -l  --> to list the disk 
+# lsblk -l  --> to see the 
+
+physical partition
+physical 
+
 ######################################################################################################################
 
 Que: Command to to print 5th largest file in directory?
@@ -303,6 +314,7 @@ Ans: cat /etc/passwd | awk -F: '{print $1}'
 	- {print $1} → prints first field (username)
 
 ################################################################################
+
 
 
 
