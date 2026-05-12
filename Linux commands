@@ -11,6 +11,11 @@ System commands:
  	awk '{print $1}' <file_name> -> it will print first column
 # awk '/error/ {print $0}' error.txt  -> it will give output of error word and print entire line 
 # nl filename --> view file by line number 
+# curl <url>  --> to see your url working or not or data is trafering or not
+# ping        --> server is reachable or not 
+# ifconfig    --> to check ip address 
+# scp         --> used to copy file from one server to other (scp <file_name> username@ip:/home/ubuntu)
+# rsync       --> start copying from it left, its sync the file 
 
 # df -h    --> to check disk full space 
 # du -sh   --> to check disk usage space by file 
